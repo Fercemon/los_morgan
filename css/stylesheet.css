@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.fa-bars {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.overlay {
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #7F7E84;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.links-wrapp {
+    transform: rotate(90deg);
+    position: relative;
+    top: 60%;
+    right: -6rem;
+    opacity: 0;
+    width: 100%;
+}
+
+.close-nav {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 20rem;
+}
+
+.overlay a {
+    display: block;
+    text-decoration: none;
+    color: #414141;
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.animation {
+    opacity: 1;
+}
+
+.home-screen {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/home-screen.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.logo {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+aside {
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
+    width: 3rem;
+}
+
+.fab {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
