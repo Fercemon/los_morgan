@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <title>LOS MORGAN</title>
 </head>
 
@@ -25,16 +26,139 @@
             </div>
         </nav>
     </header>
+    <aside>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-spotify"></i></a>
+    </aside>
     <main>
         <section class="home-screen">
             <img class="logo" src="img/logo.png" alt="logo">
         </section>
+        <section class="events light" id="events">
+            <h1 class="events-h1">UPCOMING EVENTS</h1>
+            <div class="event-wrapper">
+                <div class="event-date">
+                    <div class="event-month">JUN</div>
+                    <div class="event-day">4</div>
+                </div>
+                <div class="event-content">
+                    <div class="event-text">COPENHAGEN, DENMARK</div>
+                    <div class="event-text">DUBBLINERS</div>
+                    <div class="event-text">
+                        <span class="ticket-wrapper">
+                            <img class="event-logo" src="img/ticket.png" alt="ticket">
+                            <span>TICKETS</span>
+                        </span>
+                        <span class="rsvp-wrapper">
+                                <img class="event-logo" src="img/add-user.png" alt="add user">
+                                <span>RSVP</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-wrapper">
+                <div class="event-date">
+                    <div class="event-month">JUN</div>
+                    <div class="event-day">4</div>
+                </div>
+                <div class="event-content">
+                    <div class="event-text">COPENHAGEN, DENMARK</div>
+                    <div class="event-text">DUBBLINERS</div>
+                    <div class="event-text">
+                        <span class="ticket-wrapper">
+                                <img class="event-logo" src="img/ticket.png" alt="ticket">
+                                <span>TICKETS</span>
+                        </span>
+                        <span class="rsvp-wrapper">
+                                    <img class="event-logo" src="img/add-user.png" alt="add user">
+                                    <span>RSVP</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="events-h1">PAST EVENTS</h1>
+            <div class="event-wrapper">
+                <div class="event-date">
+                    <div class="event-month">JUN</div>
+                    <div class="event-day">4</div>
+                </div>
+                <div class="event-content">
+                    <div class="event-text">COPENHAGEN, DENMARK</div>
+                    <div class="event-text">DUBBLINERS</div>
+                    <div class="event-text">
+                        <span class="ticket-wrapper">
+                            <img class="event-logo" src="img/ticket.png" alt="ticket">
+                            <span>TICKETS</span>
+                        </span>
+                        <span class="rsvp-wrapper">
+                                <img class="event-logo" src="img/add-user.png" alt="add user">
+                                <span>RSVP</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-wrapper">
+                <div class="event-date">
+                    <div class="event-month">JUN</div>
+                    <div class="event-day">4</div>
+                </div>
+                <div class="event-content">
+                    <div class="event-text">COPENHAGEN, DENMARK</div>
+                    <div class="event-text">DUBBLINERS</div>
+                    <div class="event-text">
+                        <span class="ticket-wrapper">
+                                <img class="event-logo" src="img/ticket.png" alt="ticket">
+                                <span>TICKETS</span>
+                        </span>
+                        <span class="rsvp-wrapper">
+                                    <img class="event-logo" src="img/add-user.png" alt="add user">
+                                    <span>RSVP</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery dark" id="gallery">
+            <h1 class="gallery-h1">GALLERY</h1>
+            <div class="gallery-wrapp">
+                <img class="gallery-img" src="img/ana-b&w.jpg" alt="ana black and white">
+                <img class="gallery-img" src="img/ana-concert.jpg" alt="ana black and white">
+                <img class="gallery-img" src="img/cd-img.jpg" alt="ana black and white">
+            </div>
+        </section>
+
+        <section class="videos light" id="videos">
+            <h1 class="videos-h1">VIDEOS</h1>
+            <div class="videos-wrapp">
+                <div class="mySlides">
+                    <video class="video" src="videos/face.MOV" controls></video>
+                    <h2 class="video-h2">VIDEO TITLE</h2>
+                </div>
+                <div class="mySlides active">
+                    <video class="video" src="videos/hand.MOV" controls></video>
+                    <h2 class="video-h2">VIDEO TITLE</h2>
+                </div>
+                <div class="mySlides">
+                    <video class="video" src="videos/guitar.MOV" controls></video>
+                    <h2 class="video-h2">VIDEO TITLE</h2>
+                </div>
+                <div class="videoBtn-wrapp">
+                    <img class="demo" src="img/face.png" alt="ana black and white" onclick="currentDiv(1)">
+                    <img class="demo" src="img/hand.png" alt="ana black and white" onclick="currentDiv(2)">
+                    <img class="demo" src="img/guitar.png" alt="ana black and white" onclick="currentDiv(3)">
+                    <img class="demo" src="img/face.png" alt="ana black and white" onclick="currentDiv(1)">
+                    <img class="demo" src="img/hand.png" alt="ana black and white" onclick="currentDiv(2)">
+                    <img class="demo" src="img/guitar.png" alt="ana black and white" onclick="currentDiv(3)">
+                </div>
+            </div>
+        </section>
     </main>
-    <aside>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-spotify"></i>
-    </aside>
+
     <script src="script/script.js"></script>
 </body>
 

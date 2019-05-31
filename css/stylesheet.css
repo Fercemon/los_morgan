@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,28 @@
 
 html {
     font-size: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.light {
+    background-color: #414141;
+}
+
+.dark {
+    background-color: #0C0C0C;
+}
+
+h1 {
+    padding: 2rem 0 0 2rem;
+}
+
+h1,
+h2 {
+    color: #fff;
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -39,9 +58,9 @@ header {
     transform: rotate(90deg);
     position: relative;
     top: 60%;
-    right: -6rem;
     opacity: 0;
     width: 100%;
+    line-height: 0;
 }
 
 .close-nav {
@@ -59,11 +78,25 @@ header {
     text-decoration: none;
     color: #414141;
     font-size: 3rem;
-    line-height: 0;
 }
 
 .animation {
     opacity: 1;
+}
+
+.line-height {
+    animation: line-height 1s 1s forwards;
+}
+
+@keyframes line-height {
+    to {
+        top: 50%;
+        line-height: 1;
+    }
+}
+
+main {
+    background-color: #0C0C0C;
 }
 
 .home-screen {
@@ -83,14 +116,186 @@ header {
 }
 
 aside {
-    position: absolute;
+    position: fixed;
     bottom: 5rem;
     right: 1rem;
-    width: 3rem;
+}
+
+aside a {
+    display: block;
+    text-align: center;
 }
 
 .fab {
     color: #fff;
     font-size: 2rem;
     margin: 0.5rem 0;
+}
+
+
+/* events */
+
+section {
+    padding-bottom: 2rem;
+}
+
+.event-wrapper {
+    text-align: center;
+    width: 80%;
+    margin: 2rem auto;
+    border: 2px solid #F5F6F7;
+}
+
+.event-date {
+    background-color: #00AEEF;
+    padding: 2rem 0;
+}
+
+.event-date div {
+    color: #fff;
+}
+
+.event-month {
+    font-size: 1.5rem;
+}
+
+.event-day {
+    font-size: 2rem;
+}
+
+.event-content {
+    background: #F5F6F7;
+}
+
+.event-content::after {
+    display: block;
+    content: "";
+    background: #00AEEF;
+    height: 7rem;
+}
+
+.event-text {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.event-logo {
+    height: 1rem;
+}
+
+.ticket-wrapper,
+.rsvp-wrapper {
+    margin: 0 1rem;
+}
+
+
+/* gallery */
+
+.gallery-h1 {
+    color: #fff;
+}
+
+.gallery-img {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    border: 2px solid #F5F6F7;
+}
+
+.videos {
+    width: 100%;
+}
+
+.mySlides {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.video {
+    width: 100%;
+}
+
+.video-h2 {
+    margin: 1rem 0;
+}
+
+.videoBtn-wrapp {
+    display: none;
+}
+
+
+/* about */
+
+.about-img {
+    width: 100%;
+}
+
+.about-text {
+    color: #fff;
+    margin: 2rem 5rem;
+    text-align: justify;
+}
+
+.about-video {
+    width: 100%;
+    padding: 0 5rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .fa-bars {
+        font-size: 3.5rem;
+    }
+    .logo {
+        width: 50%;
+    }
+    .fab {
+        font-size: 3.5rem;
+        margin: 0.5rem 1rem;
+    }
+    section {
+        padding: 0 20rem 2rem 20rem;
+    }
+    /* events */
+    .event-wrapper {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+    }
+    /* gallery */
+    .gallery-wrapp {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .event-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 0.3fr;
+        align-items: center;
+    }
+    .event-content::after {
+        display: inline;
+        height: 100%;
+    }
+    .videos-wrapp {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .mySlides {
+        display: none;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .active {
+        display: block;
+    }
+    .videoBtn-wrapp {
+        display: flex;
+        width: 100%;
+        margin: 2rem auto;
+        overflow: hidden;
+    }
+    .demo {
+        width: 33%;
+        height: 33%;
+        padding: 0 1rem;
+    }
 }
